@@ -27,7 +27,7 @@ export default function WhyChooseUs() {
                         </p>
 
                         <p>
-                            Whether you're managing a Shopify store, using our Shopify
+                            Whether you&apos;re managing a Shopify store, using our Shopify
                             app, or running multiple online shops and marketplaces, we
                             bring you a single platform that gives your team and business
                             order, speed, and clarity, so your operations finally run the way
