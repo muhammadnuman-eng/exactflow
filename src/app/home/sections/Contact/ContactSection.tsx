@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { OrbitGraphic } from './OrbitGraphic';
-import { ContactForm } from './ContactForm';
+import { ContactForm } from '../../../contact/ContactForm';
 
 export const ContactSection: React.FC = () => {
   return (

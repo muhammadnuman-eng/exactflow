@@ -1,3 +1,4 @@
+import Faq from "./faq";
 import MainSection from "./mainSection";
 import PricingHero from "./PricingHero";
 import PricingSection from "./pricingSection";
@@ -12,6 +13,7 @@ export default function Pracing() {
         <PricingSection />
         <WhyChooseUs />
         <ValueProposition />
+        <Faq />
         </>
     )
 }

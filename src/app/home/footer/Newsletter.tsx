@@ -13,8 +13,9 @@ export default function Newsletter() {
 
   return (
     <form onSubmit={handleSubscribe} className="flex items-center gap-2 bg-white rounded-full p-0.5 shadow-sm border border-gray-100 max-w-md w-full">
-      <div className="flex items-center gap-2 pl-4 flex-grow">
+      <div className="flex items-center gap-2 pl-4 grow">
         <input
+          suppressHydrationWarning
           type="email"
           placeholder="Enter Email"
           value={email}
@@ -25,7 +26,7 @@ export default function Newsletter() {
       </div>
       <button
         type="submit"
-        className="bg-gradient-to-r from-blue-950 to-red-700 text-white text-[14px] font-semibold tracking-tighter px-4 py-2.5 rounded-full flex items-center gap-2 hover:opacity-90 transition-opacity"
+        className="bg-linear-to-r from-blue-950 to-red-700 text-white text-[14px] font-semibold tracking-tighter px-4 py-2.5 rounded-full flex items-center gap-2 hover:opacity-90 transition-opacity"
       >
         <Send className="w-3 h-3 transform -rotate-45" />
         SUBSCRIBE

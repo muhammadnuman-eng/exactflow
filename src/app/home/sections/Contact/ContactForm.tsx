@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { ContactFormPayload, FormErrors } from '../../types/contact';
+import { ContactFormPayload, FormErrors } from '../../../home/types/contact';
 
 export const ContactForm: React.FC = () => {
     const [formData, setFormData] = useState<ContactFormPayload>({

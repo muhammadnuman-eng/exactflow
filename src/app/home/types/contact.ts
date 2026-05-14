@@ -1,6 +1,7 @@
 export interface ContactFormPayload {
   fullName: string;
   email: string;
+  workEmail?: string;
   phone?: string;
   message: string;
 }

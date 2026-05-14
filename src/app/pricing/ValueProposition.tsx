@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Heading from "../components/ui/heading";
+import { Button } from "../components/ui/Button";
 
 export default function ValueProposition() {
   return (
@@ -27,11 +28,7 @@ export default function ValueProposition() {
         </Link>{" "}
         today.
       </p>
-
-      {/* Call to Action Button */}
-      <button className="mt-10 rounded-full bg-[#d6131c] px-8 py-4 text-base font-bold tracking-wider text-white shadow-md transition-all hover:bg-[#b80f16] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#d6131c] focus:ring-offset-2">
-        BOOK YOUR DEMO TODAY
-      </button>
+      <Button href="/demo" variant="primary" className="mt-13 px-8 py-3.5 text-base font-[500] font-[Inter] tracking-wider text-white shadow-md transition-all focus:outline-none focus:ring-2 focus:ring-[#d6131c] focus:ring-offset-2 uppercase">Book Your Demo Today</Button>
     </div>
   );
 }
