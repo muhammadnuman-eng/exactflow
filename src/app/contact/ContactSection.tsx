@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { OrbitGraphic } from './OrbitGraphic';
+import { OrbitGraphic } from '@/app/components/OrbitGraphic';
 import { ContactForm } from './ContactForm';
 import Heading from '../components/ui/heading';
 

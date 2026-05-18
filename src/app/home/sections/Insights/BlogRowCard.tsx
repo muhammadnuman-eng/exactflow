@@ -1,21 +1,19 @@
-import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { BlogPost } from '../../types/insight';
+import type { BlogPost } from '../../types/insight';
 
 interface BlogRowCardProps {
   post: BlogPost;
 }
 
-export const BlogRowCard: React.FC<BlogRowCardProps> = ({ post }) => {
+export function BlogRowCard({ post }: BlogRowCardProps) {
   return (
-    <Link 
-      href="/en/blogs" 
-      className="group rounded-2xl border border-black/5 dark:border-white/10 bg-[#6f747f] dark:bg-slate-900/60 block overflow-hidden transition-all duration-300 hover:shadow-sm"
+    <Link
+      href="/blog"
+      className="group block rounded-2xl border border-black/5 bg-white"
     >
-      <div className="flex gap-4 p-4 transition-transform duration-700 group-hover:scale-[1.01] items-center">
-        {/* Dynamic Image Box */}
-        <div className="relative h-[100px] w-[100px] shrink-0 overflow-hidden rounded-lg bg-gray-50">
+      <div className="flex items-center gap-4 p-4 transition-transform duration-700 group-hover:scale-[1.01]">
+        <div className="relative h-[100px] w-[100px] shrink-0 overflow-hidden rounded-lg">
           <Image
             src={post.image}
             alt={post.title}
@@ -25,16 +23,15 @@ export const BlogRowCard: React.FC<BlogRowCardProps> = ({ post }) => {
           />
         </div>
 
-        {/* Text Area layout column */}
         <div className="flex-1 text-left">
-          <span className="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold mb-2 text-[#332d43] bg-[#6d707c] dark:bg-slate-800  dark:text-gray-200">
+          <span className="insights_chipBg insights_textPrimary mb-2 inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold">
             {post.category}
           </span>
-          <h3 className="font-[700] text-sm md:text-[18px] text-[#3c374b] dark:text-white line-clamp-2 leading-snug">
+          <h3 className="insights_textPrimary line-clamp-2 font-semibold leading-snug">
             {post.title}
           </h3>
         </div>
       </div>
     </Link>
   );
-};
+}

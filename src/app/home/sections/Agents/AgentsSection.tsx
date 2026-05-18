@@ -1,7 +1,7 @@
 import React from 'react';
 import { AgentCarousel } from './AgentCarousel';
 import { VideoShowcase } from './VideoShowcase';
-import Heading from '@/src/app/components/ui/heading';
+import Heading from '@/app/components/ui/heading';
 
 
 export const AgentsSection: React.FC = () => {

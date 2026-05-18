@@ -4,7 +4,7 @@ import { HeroContent } from "./HeroContent";
 import { HeroMockup } from "./HeroMockup";
 import chatImg from '../../../../../public/image/chat.avif'
 import Image from "next/image";
-import Chat from "@/src/app/components/chat/chat";
+import Chat from '@/app/components/chat/chat';
 
 export const Hero = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -92,7 +92,7 @@ export const Hero = () => {
         }}
       />
 
-      {/* 3. GRID LAYER - WHITE DARK GRID */}
+      {/* 3. GRID LAYER - WHITE DARK GRIDP */}
       <div
         className={`absolute inset-0 z-20 pointer-events-none transition-opacity duration-700 ease-in-out ${
           isHovered ? "opacity-100" : "opacity-0"

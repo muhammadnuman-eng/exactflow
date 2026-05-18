@@ -13,14 +13,14 @@ export default function Chat() {
                 d="M 50, 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0"
               />
             </defs>
-            <text className="text-[14px] font-[600] fill-[#ed0d0d] uppercase tracking-[0.18em] tracking-tight">
+            <text className="text-[12px] font-[700] fill-[#ed0d0d] uppercase tracking-[0.1em]">
               <textPath href="#circlePath" startOffset="0">
                 CONTACT • CONTACT • CONTACT •
               </textPath>
             </text>
           </svg>
         </div>
-        <div className="absolute w-12 h-12 rounded-full overflow-hidden cursor-pointer bg-[#A78BFA] shadow-lg ring-2 ring-white/60">
+        <div className="absolute w-11 h-11 rounded-full overflow-hidden cursor-pointer bg-[#A78BFA] shadow-lg ">
           <Image
             src={chatImg}
             alt="support"

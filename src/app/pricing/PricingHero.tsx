@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import heroImg from '../../../public/pricing/pricingHeroImg.avif'
-import Chat from "../components/chat/chat";
+import Chat from '@/app/components/chat/chat';
 import Heading from "../components/ui/heading";
 import { Button } from "../components/ui/Button";
 
@@ -31,7 +31,7 @@ export default function PricingHero() {
 
                         {/* Description */}
                         <p className="mt-3 max-w-[680px] text-base leading-7 font-[Inter] font-[400] text-[#757575] sm:text-[20px]">
-                            Whether you're growing your Shopify store or running multiple online shops and marketplaces, ExactFlow offers flexible e-commerce AI subscription pricing that helps you scale with confidence. Our online business smart tools manage the day-to-day activities, sales, finances, and customer service using AI agents for e-commerce business services, so your team can focus on planning rather than doing manual tasks. We've designed multiple plans to match every stage of growth, whether you need smart Shopify tools, AI agents, or a fully custom AI automation plan.
+                            Whether you&apos;re growing your Shopify store or running multiple online shops and marketplaces, ExactFlow offers flexible e-commerce AI subscription pricing that helps you scale with confidence. Our online business smart tools manage the day-to-day activities, sales, finances, and customer service using AI agents for e-commerce business services, so your team can focus on planning rather than doing manual tasks. We&apos;ve designed multiple plans to match every stage of growth, whether you need smart Shopify tools, AI agents, or a fully custom AI automation plan.
                         </p>
                         {/* Buttons */}
                         <div className="mt-10 flex flex-col gap-2 sm:flex-row">

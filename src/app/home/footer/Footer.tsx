@@ -8,19 +8,12 @@ export default function Footer() {
     <footer className="relative w-full text-gray-800 bg-gradient-to-b from-[#E1DFF4] to-[#FDFEFF] font-sans pt-12 pb-6 px-6 md:px-12 lg:px-24 overflow-hidden">
       
       {/* 1. Next.js Optimized Background Image */}
-      <Image
-        alt="footer bg"
-        src="/_next/static/media/footer-background-light.c6b6253c.webp" 
-        fill
-        sizes="100vw"
-        priority
-        className="absolute inset-0 w-full h-full object-cover -z-[1] pointer-events-none"
-      />
+  
 
       {/* SECTION 1: Logo & Subscription */}
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 border-b border-black/10 pb-12 mbe-12">
-        <Link href="/en" className="flex items-center gap-2 group">
-          <div className="w-9 h-9 relative rounded-sm transform rotate-12 flex items-center justify-center font-bold text-white text-xs overflow-hidden">
+        <Link href="/" className="flex items-center gap-2 group">
+          <div className="w-9 h-9 relative rounded-sm transform  flex items-center justify-center font-bold text-white text-xs overflow-hidden">
             <Image 
               alt="logo" 
               src="/image/logo.avif" 
@@ -29,7 +22,7 @@ export default function Footer() {
               className="object-cover w-full h-full"
             />
           </div>
-          <span className="text-[24px] font-bold text-slate-800 tracking-tight group-hover:text-slate-600 transition-colors">
+          <span className="text-[25px] font-bold text-slate-800 tracking-tight  transition-colors">
             ExactFlow
           </span>
         </Link>

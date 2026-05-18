@@ -34,7 +34,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={cn("bg-[#F8F9FE]", "font-sans", geist.variable)}>
+    <html lang="en" suppressHydrationWarning className={cn("bg-[#F8F9FE]", "font-sans", geist.variable)}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />

@@ -33,7 +33,7 @@ export const Button = ({ children, variant = 'primary', className = "", href, ..
   }
 
   return (
-    <button className={combinedClasses} {...props}>
+    <button suppressHydrationWarning className={combinedClasses} {...props}>
       {children}
     </button>
   );

@@ -1,4 +1,4 @@
-import Chat from "../components/chat/chat";
+import Chat from '@/app/components/chat/chat';
 import { Button } from "../components/ui/Button";
 import Heading from "../components/ui/heading";
 

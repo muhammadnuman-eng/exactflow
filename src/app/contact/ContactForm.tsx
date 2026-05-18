@@ -73,6 +73,7 @@ export const ContactForm: React.FC = () => {
             {/* Full Name */}
             <div className="relative w-full">
               <input
+                suppressHydrationWarning
                 type="text"
                 name="fullName"
                 id="fullName"
@@ -104,8 +105,10 @@ export const ContactForm: React.FC = () => {
             {/* Email Address */}
             <div className="relative w-full">
               <input
+                suppressHydrationWarning
                 type="email"
                 name="email"
+                autoComplete="email"
                 id="email"
                 placeholder=" "
                 value={formData.email}
@@ -141,8 +144,10 @@ export const ContactForm: React.FC = () => {
             }}
           >
                 <input
-                type="text"
+                suppressHydrationWarning
+                type="email"
                 name="workEmail"
+                autoComplete="email"
               id="workEmail"
               placeholder=" "
               value={formData.workEmail}
@@ -169,8 +174,10 @@ export const ContactForm: React.FC = () => {
             }}
           >
             <input
+              suppressHydrationWarning
               type="tel"
               name="phone"
+              autoComplete="tel"
               id="phone"
               placeholder=" "
               value={formData.phone}
@@ -197,6 +204,7 @@ export const ContactForm: React.FC = () => {
             }}
           >
             <textarea
+              suppressHydrationWarning
               name="message"
               id="message"
               rows={6}

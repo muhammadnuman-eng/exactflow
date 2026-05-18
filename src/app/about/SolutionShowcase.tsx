@@ -1,5 +1,5 @@
 import React from 'react';
-import { OrbitGraphic } from '../home/sections/Contact/OrbitGraphic';
+import { OrbitGraphic } from '@/app/components/OrbitGraphic';
 import Heading from '../components/ui/heading';
 
 export default function SolutionShowcase() {

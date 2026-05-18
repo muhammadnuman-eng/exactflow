@@ -1,8 +1,7 @@
 'use client';
 
-import React from 'react';
-import { OrbitGraphic } from './OrbitGraphic';
-import { ContactForm } from '../../../contact/ContactForm';
+import { OrbitGraphic } from '@/app/components/OrbitGraphic';
+import { ContactForm } from '@/app/contact/ContactForm';
 
 export const ContactSection: React.FC = () => {
   return (

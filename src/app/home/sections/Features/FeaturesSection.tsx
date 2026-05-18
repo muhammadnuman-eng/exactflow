@@ -5,7 +5,7 @@ import { FeatureCard } from './FeatureCard';
 
 export const FeaturesSection: React.FC = () => {
   return (
-    <div className='bg-gray-200'>
+    <div className='bg-[#F4F5FA]'>
     <section id="enterprise" className="py-16 md:py-24 px-4 md:px-8 max-w-[1230px] mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8` items-center">
         

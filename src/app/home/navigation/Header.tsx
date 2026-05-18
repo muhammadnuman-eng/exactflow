@@ -30,11 +30,12 @@ export const Header = () => {
   return (
     <>
       <header className={`${montserrat.variable} fixed top-6 left-0 right-0 z-50 px-4 flex justify-center`}>
-        <div className="w-full xl:max-w-[1270px] lg:max-w-[860px] bg-white/90 backdrop-blur-sm border border-gray-100 rounded-full xl:py-2 lg:py-1.5 sm:py-1 pl-3 pr-2 flex flex-nowrap items-center xsm:py-1.5">
+        <div className="w-full xl:max-w-[1270px] lg:max-w-[860px] overflow-visible bg-white/90 backdrop-blur-sm border border-gray-100 rounded-full xl:py-2 lg:py-1.5 sm:py-1 pl-3 pr-2 flex flex-nowrap items-center xsm:py-1.5">
 
           <div className="flex items-center gap-1 shrink-0">
             <button
               type="button"
+              suppressHydrationWarning
               onClick={() => setIsMenuOpen(true)}
               aria-label="Open menu"
               aria-expanded={isMenuOpen}
@@ -48,7 +49,7 @@ export const Header = () => {
             </span>
           </div>
 
-          <div className="hidden lg:flex flex-1 items-center justify-center min-w-0 px-4">
+          <div className="hidden lg:flex flex-1 items-center justify-center min-w-0 overflow-visible px-4">
             <Navbar />
           </div>
 
@@ -56,6 +57,7 @@ export const Header = () => {
             <div className="relative group">
               <button
                 type="button"
+                suppressHydrationWarning
                 aria-label="Light Mode"
                 className="p-2 text-gray-700 hover:text-[#db1521] cursor-pointer block rounded-full transition-colors duration-200 hover:bg-gray-100"
               >
@@ -71,7 +73,11 @@ export const Header = () => {
               </div>
             </div>
 
-            <button className="hidden xl:block text-[16px] font-medium text-gray-700 hover:text-[#db1521] cursor-pointer whitespace-nowrap">
+            <button
+              type="button"
+              suppressHydrationWarning
+              className="hidden xl:block text-[16px] font-medium text-gray-700 hover:text-[#db1521] cursor-pointer whitespace-nowrap"
+            >
               Sign In
             </button>
 

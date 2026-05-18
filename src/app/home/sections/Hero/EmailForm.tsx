@@ -20,8 +20,11 @@ export const EmailForm = ({ onInputHoverChange }: EmailFormProps) => {
     >
       <div className="w-full bg-white border border-gray-200 rounded-full px-2 lg:border-0 lg:rounded-none lg:px-0 lg:bg-transparent">
         <Input
+          type="email"
+          name="email"
+          autoComplete="email"
           placeholder={HERO_CONTENT.placeholder}
-          className='text-black! hover:text-red-700! placeholder:text-black! hover:placeholder:text-red-700! transition-colors duration-200 font-[Arial] text-[16px] font-medium shadow-amber-150'
+          className="text-black! hover:text-red-700! placeholder:text-black! hover:placeholder:text-red-700! transition-colors duration-200 font-[Arial] text-[16px] font-medium shadow-amber-150"
         />
       </div>
       <button
